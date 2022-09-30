@@ -15,8 +15,31 @@ class Main {
 
     while(numeroWhile < 3){
       System.out.println(numeroWhile);
-      numeroWhile = numeroWhile + 1;
+      numeroWhile++;
     }
+
+    int numeroDoWhile = 3;
+
+    do{
+      System.out.println("solo me ejecuto una vez");
+      numeroDoWhile++;
+    } while(numeroDoWhile < 3);
     
+    for (int numeroFor = 0; numeroFor <=3; numeroFor++){
+       System.out.println("numeroFor es: "+numeroFor);
+    }
+ 
+    String estacion = "DICIEMBRE";
+
+    switch( estacion ){
+      case "PRIMAVERA":
+      case "VERANO":
+      case "OTOÑO":
+      case "INVIERNO":
+        System.out.println("ES " + estacion);
+        break;
+      default:
+         System.out.println(estacion + " no es una estación válida");
+    };
   }
 }
